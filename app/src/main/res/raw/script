@@ -1,0 +1,199 @@
+CREATE TABLE IF NOT EXISTS USUARIO (
+    id INTEGER PRIMARY KEY NOT NULL,
+    usuario VARCHAR(50),
+    senha VARCHAR(15),
+    nome VARCHAR(50),
+    cpf VARCHAR(15) NOT NULL,
+    rg VARCHAR(20),
+    digitoRG VARCHAR(1),
+    dataUltimoAcesso VARCHAR(20),
+    ativo INTEGER,
+    token text
+);
+
+CREATE UNIQUE INDEX index_usuario_cpf on USUARIO (cpf);
+
+CREATE TABLE IF NOT EXISTS TURMAS (
+    id INTEGER PRIMARY KEY NOT NULL,
+    codigoTurma INTEGER NOT NULL,
+    nomeTurma VARCHAR(50),
+    codigoDiretoria INTEGER,
+    nomeDiretoria VARCHAR(50),
+    codigoEscola INTEGER,
+    nomeEscola VARCHAR(50),
+    codigoTipoEnsino INTEGER,
+    nomeTipoEnsino VARCHAR(50),
+    anoLetivo INTEGER
+);
+
+CREATE UNIQUE INDEX index_turmas_codigoTurma on TURMAS (codigoTurma);
+
+CREATE TABLE IF NOT EXISTS ALUNOS (
+    id INTEGER PRIMARY KEY NOT NULL,
+    codigoMatricula INTEGER NOT NULL,
+    codigoAluno INTEGER,
+    alunoAtivo INTEGER,
+    numeroChamada INTEGER,
+    nomeAluno VARCHAR(50),
+    numeroRa INTEGER,
+    digitoRa VARCHAR(2),
+    ufRa VARCHAR(2),
+    pai VARCHAR(50),
+    mae VARCHAR(50),
+    turma_id INTEGER,
+    FOREIGN KEY(turma_id) REFERENCES TURMAS(id)
+);
+
+CREATE UNIQUE INDEX index_aluno_codigoMatricula on ALUNOS (codigoMatricula);
+
+CREATE TABLE IF NOT EXISTS TURMASFREQUENCIA (
+    id INTEGER PRIMARY KEY NOT NULL,
+    codigoTurma INTEGER, 
+    codigoDiretoria INTEGER, 
+    codigoEscola INTEGER, 
+    codigoTipoEnsino INTEGER, 
+    aulasBimestre INTEGER, 
+    aulasAno INTEGER,
+    turma_id INTEGER,
+    FOREIGN KEY(turma_id) REFERENCES TURMAS(id)
+);
+
+CREATE TABLE IF NOT EXISTS DISCIPLINA (
+    id INTEGER PRIMARY KEY NOT NULL,
+    codigoDisciplina INTEGER NOT NULL,
+    nomeDisciplina VARCHAR(50),
+    turmasFrequencia_id INTEGER,
+    FOREIGN KEY(turmasFrequencia_id) REFERENCES TURMASFREQUENCIA(id)
+);
+
+
+CREATE TABLE IF NOT EXISTS AULAS (
+    id INTEGER PRIMARY KEY NOT NULL,
+    inicioHora VARCHAR(5),
+    fimHora VARCHAR(5),
+    diaSemana INTEGER,
+    codigoAula INTEGER NOT NULL,
+    disciplina_id INTEGER,
+    FOREIGN KEY(disciplina_id) REFERENCES DISCIPLINA(id)
+);
+
+
+CREATE TABLE IF NOT EXISTS TOTALFALTASALUNOS (
+    id INTEGER PRIMARY KEY NOT NULL,
+    codigoMatricula INTEGER,
+    faltasAnuais INTEGER,
+    faltasBimestre INTEGER,
+    faltasSequenciais INTEGER,
+    disciplina_id INTEGER,
+    aluno_id INTEGER,
+    FOREIGN KEY(aluno_id) REFERENCES ALUNOS(id),
+    FOREIGN KEY(disciplina_id) REFERENCES DISCIPLINA(id)
+);
+
+CREATE TABLE IF NOT EXISTS AVALIACOES (
+    id INTEGER PRIMARY KEY NOT NULL,
+    codigoAvaliacao INTEGER NOT NULL,
+    codigoTurma INTEGER,
+    codigoDisciplina INTEGER,
+    codigoTipoAtividade INTEGER,
+    nome VARCHAR(50),
+    data VARCHAR(20),
+    dataCadastro VARCHAR(20),
+    dataServidor VARCHAR(20),
+    bimestre INTEGER,
+    valeNota INTEGER,
+    mobileId INTEGER,
+    turma_id INTEGER,
+    disciplina_id INTEGER,
+    FOREIGN KEY(disciplina_id) REFERENCES DISCIPLINA(id),
+    FOREIGN KEY(turma_id) REFERENCES TURMAS(id)
+);
+
+CREATE UNIQUE INDEX index_avaliacoes_codigoAvaliacao on AVALIACOES (codigoAvaliacao);
+
+CREATE TABLE IF NOT EXISTS NOTASALUNO (
+    id INTEGER PRIMARY KEY NOT NULL,
+    codigoMatricula INTEGER,
+    nota VARCHAR(5),
+    dataCadastro VARCHAR(20),
+    dataServidor VARCHAR(20),
+    aluno_id INTEGER,
+    usuario_id INTEGER,
+    avaliacao_id INTEGER,
+    FOREIGN KEY(aluno_id) REFERENCES ALUNOS(id),
+    FOREIGN KEY(usuario_id) REFERENCES USUARIO(id),
+    FOREIGN KEY(avaliacao_id) REFERENCES AVALIACOES(id)
+);
+
+CREATE TABLE IF NOT EXISTS BIMESTRE (
+    id INTEGER PRIMARY KEY NOT NULL,
+    numero INTEGER,
+    inicioBimestre VARCHAR(20),
+    fimBimestre VARCHAR(20),
+    turmasFrequencia_id INTEGER,
+    FOREIGN KEY(turmasFrequencia_id) REFERENCES TURMASFREQUENCIA(id)
+);
+
+CREATE TABLE IF NOT EXISTS DIASLETIVOS (
+    id INTEGER PRIMARY KEY NOT NULL,
+    dataAula VARCHAR(20),
+    bimestre_id INTEGER,
+    FOREIGN KEY(bimestre_id) REFERENCES BIMESTRE(id)
+);
+
+CREATE TABLE IF NOT EXISTS FALTASALUNOS (
+    id INTEGER PRIMARY KEY NOT NULL,
+    tipoFalta VARCHAR(2),
+    dataCadastro VARCHAR(20),
+    dataServidor VARCHAR(20),
+    aluno_id INTEGER,
+    usuario_id INTEGER,
+    diasLetivos_id INTEGER,
+    aula_id INTEGER,
+    FOREIGN KEY(aluno_id) REFERENCES ALUNOS(id),
+    FOREIGN KEY(usuario_id) REFERENCES USUARIO(id),
+    FOREIGN KEY(diasLetivos_id) REFERENCES DIASLETIVOS(id),
+    FOREIGN KEY(aula_id) REFERENCES AULAS(id)
+);
+
+CREATE TABLE IF NOT EXISTS GRUPOS (
+    id INTEGER PRIMARY KEY NOT NULL,
+    codigoGrupo INTEGER,
+    anoLetivo INTEGER,
+    codigoTipoEnsino INTEGER,
+    serie INTEGER,
+    codigoDisciplina INTEGER,
+    disciplina_id INTEGER,
+    FOREIGN KEY(disciplina_id) REFERENCES DISCIPLINA(id)
+);
+
+CREATE TABLE IF NOT EXISTS CONTEUDO (
+    id INTEGER PRIMARY KEY NOT NULL,
+    codigoConteudo INTEGER,
+    descricaoConteudo VARCHAR(300),
+    grupo_id INTEGER,
+    FOREIGN KEY(grupo_id) REFERENCES GRUPOS(id)
+);
+
+CREATE TABLE IF NOT EXISTS HABILIDADES (
+    id INTEGER PRIMARY KEY NOT NULL,
+    codigoHabilidade INTEGER,
+    descricaoHabilidade VARCHAR(300),
+    conteudo_id INTEGER,
+    FOREIGN KEY(conteudo_id) REFERENCES CONTEUDO(id)
+);
+
+CREATE TABLE IF NOT EXISTS HABILIDADESABORDADAS (
+    id INTEGER PRIMARY KEY NOT NULL,
+    dataCadastro VARCHAR(20),
+    dataServidor VARCHAR(20),
+    descricao TEXT,
+    turma_id INTEGER,
+    habilidade_id INTEGER,
+    usuario_id INTEGER,
+    diasLetivos_id INTEGER,
+    FOREIGN KEY(diasLetivos_id) REFERENCES DIASLETIVOS(id),
+    FOREIGN KEY(usuario_id) REFERENCES USUARIO(id),
+    FOREIGN KEY(turma_id) REFERENCES TURMAS(id),
+    FOREIGN KEY(habilidade_id) REFERENCES HABILIDADES(id)
+);

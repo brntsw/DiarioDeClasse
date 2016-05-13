@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_color">
+
+    <LinearLayout
+        android:id="@+id/lay_turma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cinza_indice"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tv_turma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cinza_titulo_tela_interna"
+            android:textSize="@dimen/titulo_turma"
+            android:ellipsize="end"
+            android:text="Ourinhos / Josepha Cubas Professora\n 8 Serie 8C Manhã"
+            android:singleLine="true"
+            android:padding="20dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeCalendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_turma"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_avaliacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Avaliaçao teste 1 bimestre"
+            android:textColor="@color/cinza_titulo_indice"
+            android:ellipsize="end"
+            android:textSize="@dimen/titulo_turma"
+            android:singleLine="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lista_lancamento"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/relativeCalendario"/>
+
+</LinearLayout>

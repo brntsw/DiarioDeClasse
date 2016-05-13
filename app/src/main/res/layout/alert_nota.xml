@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="20dp"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/textHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <NumberPicker
+            android:layout_width="@dimen/number_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:id="@+id/numberOfPlayersPicker"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text=","
+            android:gravity="center"
+            android:textSize="50dp"
+            android:textColor="@color/black"/>
+
+        <NumberPicker
+            android:layout_width="@dimen/number_decimal_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:id="@+id/numberOfPlayersPickerDezena"/>
+
+        <NumberPicker
+            android:layout_width="@dimen/number_decimal_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:id="@+id/numberOfPlayersPickerCentena"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sem nota"
+                android:textSize="40dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+            <NumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/numberOfPlayersPicker"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_nota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S/N"
+                android:textSize="40dp"/>
+
+                </LinearLayout>
+        </LinearLayout>
+-->
+</LinearLayout>

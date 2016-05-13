@@ -1,0 +1,26 @@
+<resources>
+    <dimen name="texto_grid">25sp</dimen>
+    <dimen name="texto_ano">26sp</dimen>
+    <dimen name="texto_spinner_ano">25sp</dimen>
+    <dimen name="titulo_toolbar">25sp</dimen>
+    <dimen name="titulo_turma">22sp</dimen>
+    <dimen name="texto_spinner_data">18sp</dimen>
+
+    <dimen name="texto_aviso">22sp</dimen>
+
+    <dimen name="texto_tab">18sp</dimen>
+
+    <dimen name="texto_sub">160dp</dimen>
+
+    <dimen name="number_height">320dp</dimen>
+    <dimen name="number_width">80dp</dimen>
+
+    <dimen name="number_decimal_height">160dp</dimen>
+    <dimen name="number_decimal_width">40dp</dimen>
+
+    <dimen name="titulo_conteudos">16sp</dimen>
+    <dimen name="texto_item_conteudo">18sp</dimen>
+    <dimen name="texto_item_habilidade">16sp</dimen>
+
+    <item name="scale_checkbox" format="float" type="dimen">1.4</item>
+</resources>

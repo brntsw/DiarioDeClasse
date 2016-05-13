@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lay_diretoria"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cinza_indice"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_diretoria"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/cinza_titulo_tela_interna"
+            android:textSize="@dimen/titulo_turma"
+            android:singleLine="true"
+            android:text="Ourinhos / Josepha Cubas"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_turma"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_turma"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/texto_spinner_data"
+            android:textStyle="bold"
+            android:text="Turma" />
+
+        <TextView
+            android:id="@+id/tv_disciplina"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/texto_spinner_data"
+            android:textColor="@color/cinza_titulo_indice" />
+
+        <TextView
+            android:id="@+id/tv_tipo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/texto_spinner_data"
+            android:textColor="@color/cinza_titulo_indice"
+            android:text="Tipo Ensino" />
+
+    </LinearLayout>
+
+</LinearLayout>

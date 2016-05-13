@@ -1,0 +1,23 @@
+{
+  "Nome": "ANA CAMILA SEABRA DE SOUZA",
+  "Token": "dd248e90c1e049c68af58d71fddd64aa",
+  "IdUsuario": 1662302,
+  "NumeroCpf": "33986705805",
+  "Perfis": [
+    {
+      "Codigo": 4,
+      "Nome": "Professor",
+      "Nivel": 12,
+      "Comportamento": 4,
+      "AnosLetivos": [
+        2016,
+        2015,
+        2014
+      ]
+    }
+  ],
+  "numeroRg": "42877525",
+  "digitoRg": "1",
+  "DadosProfessor": "",
+  "Id": 1662302
+}

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_color">
+    <LinearLayout
+        android:id="@+id/lay_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawableStart="@drawable/ic_person"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="center|center|left"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay_turma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_user"
+        android:background="@color/cinza_indice"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_aluno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cinza_titulo_tela_interna"
+            android:textSize="@dimen/titulo_turma"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:padding="20dp" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay_dados"
+        android:layout_below="@+id/lay_turma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_turma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_matricula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:paddingLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:paddingLeft="20dp"
+                android:paddingBottom="15dp" />
+
+
+            <View
+                android:background="#cccccc"
+                android:layout_width = "fill_parent"
+                android:layout_height="1dip" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:text="@string/desc_responsavel"/>
+
+
+            <TextView
+                android:id="@+id/tv_nome_pai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:paddingLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_nome_mae"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:paddingLeft="20dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

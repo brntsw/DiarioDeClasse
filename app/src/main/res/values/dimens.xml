@@ -1,0 +1,124 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--
+        320dp portrait
+    -->
+    <dimen name="larg_logo_main">250dp</dimen>
+    <dimen name="alt_logo_main">130dp</dimen>
+    <dimen name="larg_bt_main">245dp</dimen>
+    <dimen name="padding_edits_main">60dp</dimen>
+    <dimen name="larguraswitch">100px</dimen>
+    <dimen name="alturacoluna">50px</dimen>
+    <dimen name="sizetitulo">30sp</dimen>
+    <dimen name="paddingcolunanometop">14px</dimen>
+    <dimen name="paddingcolunanomebottom">13px</dimen>
+    <dimen name="marginleftswitchcadatividade">10dp</dimen>
+    <dimen name="scrollsizecadfrequenciarodape">700px</dimen>
+    <dimen name="marginleftswitch">10px</dimen>
+    <dimen name="larguranomecadfrequencia_1aula">500px</dimen>
+    <dimen name="larguranomecadfrequencia_2aula">500px</dimen>
+    <dimen name="larguranomecadfrequencia_3aula">500px</dimen>
+    <dimen name="larguranomecadfrequencia_mais">500px</dimen>
+    <dimen name="larguranomeconsfrequencia">380px</dimen>
+    <dimen name="larguranomecadavaliacao">270dp</dimen>
+    <dimen name="larguranomecadfechamento">500px</dimen>
+    <dimen name="larguranomeconsavaliacao">230dp</dimen>
+    <dimen name="fontsizelabelcabecalho">18sp</dimen>
+    <dimen name="fontsizetextcabecalho">15sp</dimen>
+    <dimen name="larguranomecadfechamento1">500px</dimen>
+    <dimen name="larguranomecadfechamento2">850px</dimen>
+    <dimen name="altura_coluna_aluno_aula">50dp</dimen>
+    <dimen name="largura_coluna_aula">130dp</dimen>
+    <dimen name="margins_btdata">10dp</dimen>
+    <dimen name="widht_btdata">200dp</dimen>
+    <dimen name="height_select_nota">35dp</dimen>
+    <dimen name="pad_left_icon_grafico">67px</dimen>
+    <dimen name="pad_top_icon_grafico">16px</dimen>
+    <dimen name="pad_right_icon_grafico">67px</dimen>
+    <dimen name="pad_bottom_icon_grafico">18px</dimen>
+    <dimen name="widht_select_nota">80dp</dimen>
+    <dimen name="size_icon_grafico">15dp</dimen>
+    <dimen name="widht_webview_grafico">400px</dimen>
+    <dimen name="height_webview_grafico">200px</dimen>
+    <dimen name="textsizenome">5sp</dimen>
+    //inclusões Gustavo
+    <dimen name="fontsizetextprincipal">26sp</dimen>
+    <dimen name="fontsizetextsecundario">18sp</dimen>
+    <dimen name="fontsizetextview">16sp</dimen>
+    <dimen name="fontsizetextedit">14sp</dimen>
+    <dimen name="fontsizetextlista">15px</dimen>
+    <dimen name="paddinglinhadados">7px</dimen>
+    <dimen name="paddinglistavazia">15px</dimen>
+    <dimen name="widhtedityear">90dp</dimen>
+    <dimen name="heightedityear">25dp</dimen>
+    <dimen name="widhttglido">60dp</dimen>
+    <dimen name="heighttglido">40dp</dimen>
+    <dimen name="marginlarge">10dp</dimen>
+    <dimen name="marginmedium">5dp</dimen>
+    <dimen name="marginsmall">1dp</dimen>
+    //
+    <dimen name="widhtedit">15dp</dimen>
+    <dimen name="widhtswaula">45dp</dimen>
+    <dimen name="heightswaula">25dp</dimen>
+    <dimen name="widhtbtsalvar">100dp</dimen>
+    <dimen name="heightbtsalvar">30dp</dimen>
+    <dimen name="widhtbtpresenca">200dp</dimen>
+    <dimen name="heightbtpresenca">40dp</dimen>
+    //
+    <dimen name="widhteddata">70dp</dimen>
+    <dimen name="heighteddata">18dp</dimen>
+    //
+    <dimen name="widht_coluna_nota">100dp</dimen>
+    <dimen name="widhtnota">60dp</dimen>
+    <dimen name="heightnota">30dp</dimen>
+    //
+    <dimen name="height_coluna_tit_fechamento">40dp</dimen>
+    <dimen name="height_coluna_fechamento">40dp</dimen>
+    <dimen name="widht_coluna_fechamento">110dp</dimen>
+    <dimen name="texsize_fechamento">160dp</dimen>
+    <dimen name="widht_dialog_col_principal_fechamento">120dp</dimen>
+    //
+    <dimen name="height_spinner">23dp</dimen>
+    <dimen name="padding_spinner">30dp</dimen>
+    <dimen name="margin_popover">40dp</dimen>
+
+    //Menu
+    <dimen name="padleftlayoutmenu">17dp</dimen>
+    <dimen name="padtopbottomlayoutmenu">10dp</dimen>
+    <dimen name="widhtlayoutcategoria">200dp</dimen>
+    <dimen name="sizeimicon">20dp</dimen>
+    <dimen name="textsizecategoria">7sp</dimen>
+    <dimen name="padlefttextsizecategoria">15dp</dimen>
+    <dimen name="padimagelayout">20dp</dimen>
+    <dimen name="padimagelayoutchild">40dp</dimen>
+    <dimen name="sizeimageprofile">100dp</dimen>
+    <dimen name="textsizenameprofile">7sp</dimen>
+    <dimen name="padlayoutsublista">10dp</dimen>
+    <dimen name="textsizesublista">19sp</dimen>
+
+    //Home
+    <dimen name="heighttitulopanel">50dp</dimen>
+    <dimen name="textsizetitulopanel">10sp</dimen>
+    <dimen name="heightitenspanel">50dp</dimen>
+    <dimen name="textsizepanel">10sp</dimen>
+    <dimen name="padlefttextpanel">15dp</dimen>
+    <dimen name="padleftrightpanel">10dp</dimen>
+
+    //Deatlhe Carteirinha
+    <dimen name="margin_bottom_imperson">10dp</dimen>
+    <dimen name="widht_imperson">60dp</dimen>
+    <dimen name="height_imperson">80dp</dimen>
+    <dimen name="height_detalhes">100dp</dimen>
+    <dimen name="pad_left_right_layout_detalhes">20dp</dimen>
+    <dimen name="pad_top_bottom_layout_detalhes">5dp</dimen>
+    <dimen name="textsize_detalhes">8sp</dimen>
+    <dimen name="padding_bottom_detalhes">10dp</dimen>
+    <dimen name="widht_scroll_detalhes">300dp</dimen>
+    <dimen name="height_scroll_detalhes">250dp</dimen>
+    <dimen name="padding_left_right_layout_rodape_detalhes">30dp</dimen>
+    <dimen name="padding_top_layout_rodape_detalhes">10dp</dimen>
+    <dimen name="padding_bts_detalhes">5dp</dimen>
+</resources>

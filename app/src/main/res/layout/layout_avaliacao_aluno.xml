@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_nota"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:textSize="@dimen/titulo_turma"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:id="@+id/lay_aluno"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_aluno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/texto_tab"
+                android:textColor="@color/cinza_titulo_tela_interna" />
+
+            <TextView
+                android:id="@+id/tv_matricula_aluno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/texto_tab"
+                android:textColor="@color/cinza_titulo_tela_interna" />
+
+            <TextView
+                android:id="@+id/tv_status_aluno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/texto_tab"
+                android:textColor="@color/cinza_titulo_tela_interna" />
+        </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_ativo"
+                android:textSize="22dp"
+                android:text="R"
+                android:gravity="right"
+                android:textColor="@color/amarelo_texto_dia_letivo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+
+    </LinearLayout>
+</LinearLayout>

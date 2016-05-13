@@ -1,0 +1,213 @@
+<resources>
+
+    <string name="sem_permissao">Você não possui permissão suficiente para acessar!</string>
+    <string name="erro_turmas">Não foi possível carregar as turmas</string>
+    <string name="erro_sincronismo">Não há dados para serem enviados</string>
+    <string name="erro_servidor">Erro no servidor! Tente novamente mais tarde</string>
+    <string name="sincronize_novamente">Erro! Faça o sincronismo novamente</string>
+    <string name="sincronizacao_realizada">Sincronização realizada com sucesso</string>
+    <string name="verifica_usuario">Verificando usuário e senha</string>
+    <string name="autentica_usuario">Aguarde, autenticando usuário</string>
+    <string name="aguarde">Aguarde</string>
+    <string name="envia_frequencia">Enviando frequências</string>
+    <string name="envia_registro">Enviando registros de aula</string>
+    <string name="envia_avaliacao">Enviando avaliações</string>
+    <string name="frequencia_sincronizada">Frequências sincronizadas!</string>
+    <string name="registro_aula_sincronizado">Registros de aula sincronizados!</string>
+    <string name="avaliacao_sincronizada">Avaliações sincronizadas!</string>
+    <string name="sincronizando">Sincronizando dados</string>
+    <string name="valida_perfil">Validando o perfil</string>
+    <string name="falha_perfil">Falha ao validar o perfil</string>
+    <string name="carrega_info">Carregando Informações do usuário. O processo leva alguns minutos. Por favor, aguarde.</string>
+    <string name="registro_aula">Registrando aula</string>
+
+    <string name="notificacoes">Notificações</string>
+    <string name="confirma">Confirmar</string>
+
+    <!-- Itens da Home -->
+    <string name="turmas">Turmas</string>
+    <string name="planejamento">Planejamento</string>
+    <string name="registro_aulas">Registro de aulas</string>
+    <string name="frequencia">Frequência</string>
+    <string name="avaliacao">Avaliação</string>
+    <string name="selecionado">Selecionado</string>
+    <string name="nao_selecionado">Não selecionado</string>
+    <string name="video_novo_description">Vídeo novo</string>
+    <string name="video_novo">Tem um vídeo novo do secretário para você!</string>
+    <string name="compartilhar">Compartilhar</string>
+    <string name="avaliar">Avaliar o aplicativo</string>
+    <string name="sair">Sair</string>
+    <string name="sobre">Sobre</string>
+
+    <string name="app_name">Di@rio de classe</string>
+    <string name="action_settings">Settings</string>
+    <string name="hintusuario">Digite o Usuário</string>
+    <string name="hintsenha">Digite a Senha</string>
+    <string name="lbtlogar">ENTRAR</string>
+    <string name="lbtvalidarcarteirinha">Validar Carteirinha</string>
+    <string name="content_desc_logo_main">Logo Secretária Escolar Digital</string>
+    <string name="content_desc_bacground_main">Logo Estado</string>
+    <string name="drawer_open">Menu</string>
+    <string name="drawer_close">Secretaria Digital Escolar</string>
+    <string name="lfreqcadastrar">Frequência - Cadastrar</string>
+    <string name="lfreqconsultar">Frequência - Consultar</string>
+    <string name="lAvalconsultar">Notas - Consultar</string>
+    <string name="lAvalcadastrar">Notas - Cadastrar</string>
+    <string name="lAtivcadastrar">Atividades - Cadastrar</string>
+    <string name="latividade">"Atividade: "</string>
+    <string name="lnomeatividade">Nome da atividade</string>
+    <string name="hintnomeatividade">Digite o nome da Atividade</string>
+    <string name="lpresencaaluno">Requer presença?</string>
+    <string name="ltipoatividade">Tipo de Atividade</string>
+    <string name="lstatusatividade">Status da Atividade</string>
+    <string name="ldatainicioprevisto">Data e Hora - inicio (Previsto)</string>
+    <string name="hintpeso">Digite o peso</string>
+    <string name="ldatafimprevisto">Data e Hora - Fim (Previsto)</string>
+    <string name="ldatainiciorealizado">Data e Hora - inicio (Realizado)</string>
+    <string name="ldatafimrealizado">Data e Hora - Fim (Realizado)</string>
+    <string name="hintdescricaoatividade">Descreva a Atividade</string>
+    <string name="ldescricaoatividade">Descrição da Atividade</string>
+    <string name="hintdata">Selecione a data</string>
+    <string name="hinthora">Selecione a hora</string>
+    <string name="lvalenota">Vale nota?</string>
+    <string name="lpesonota">Peso nota</string>
+    <string name="lescola">"Escola: "</string>
+    <string name="lturma">"Turma: "</string>
+    <string name="ldiretoria">"Diretoria: "</string>
+    <string name="ltipoensino">"Tipo de Ensino: "</string>
+    <string name="lperiodo">"Período: "</string>
+    <string name="ldisciplina">"Disciplina: "</string>
+    <string name="ldatainicioavaliacao">"Data Inicio da Realizacao: "</string>
+    <string name="ldatafimavaliacao">"Data Fim da Realizacao: "</string>
+    <string name="btlogar"></string>
+    <string name="aluno"></string>
+    <string name="id"></string>
+    <string name="idcoluna"></string>
+    <string name="idlinha"></string>
+    <string name="mes"></string>
+    <string name="idchild"></string>
+    <string name="lFechCadastrar">Fechamento - Cadastrar</string>
+    <string name="lFechConsultar">Fechamento - Consultar</string>
+    <string name="lbtalterarbanca">Alterar Banca</string>
+    <string name="lbanca">"Banca: "</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="switchtag">switch</string>
+    <string name="lplanejado">Planejado</string>
+    <string name="lnaoplanejado">Não planejado</string>
+    <string name="lrealizado">Realizado</string>
+    <string name="lnaorealizado">Não realizado</string>
+    <string name="domingo">Domingo</string>
+    <string name="segunda">Segunda-feira</string>
+    <string name="terca">Terça-feira</string>
+    <string name="quarta">Quarta-feira</string>
+    <string name="quinta">Quinta-feira</string>
+    <string name="sexta">Sexta-feira</string>
+    <string name="sabado">Sábado</string>
+    <string name="janeiro">Janeiro</string>
+    <string name="fevereiro">Fevereiro</string>
+    <string name="marco">Março</string>
+    <string name="abril">Abril</string>
+    <string name="maio">Maio</string>
+    <string name="junho">Junho</string>
+    <string name="julho">Julho</string>
+    <string name="agosto">Agosto</string>
+    <string name="setembro">Setembro</string>
+    <string name="outubro">Outubro</string>
+    <string name="novembro">Novembro</string>
+    <string name="dezembro">Dezembro</string>
+    <string name="lplanejamentoaula">Visualização do Planejamento da Aula</string>
+    <string name="lbimestre">Bimestre:</string>
+    <string name="ldata">Data:</string>
+    <string name="lhorario">Horário:</string>
+    <string name="ldadosplanejamento">Dados do Planejamento</string>
+    <string name="lconteudoaula">Conteúdo da Aula</string>
+    <string name="lconteudolivre">Conteúdo Livre</string>
+    <string name="ledicaoplanejamento">Edição do Planejamento da Aula</string>
+    <string name="obrigatorio">Preenchimento obrigatório!</string>
+    <string name="usuario">Usuário</string>
+    <string name="descricaolancamentonao">Falta</string>
+    <string name="titulo_lancamento">Lançamento</string>
+    <string name="faltas_ano">Faltas no Ano:</string>
+    <string name="faltas_bimestre">Faltas no Bimestre:</string>
+    <string name="faltas_sequencia">Faltas em Sequência:</string>
+    <string name="anterior">Anterior</string>
+    <string name="proximo">Próximo</string>
+    <string name="ano">Ano:</string>
+    <string name="conecte_wifi">Conecte-se à uma rede Wifi</string>
+    <string name="pesquisa">Pesquisar</string>
+    <string name="usuario_nao_encontrado">Usuário não encontrado</string>
+    <string name="pesquisar_aluno">Pesquisar aluno&#8230;</string>
+    <string name="habilidades">Habilidades</string>
+    <string name="conteudo">Conteúdo</string>
+    <string name="observacoes">Observações</string>
+    <string name="ocorrencias">Ocorrências</string>
+    <string name="preencha_observacoes">Preencha as observações</string>
+    <string name="preencha_ocorrencias">Preencha as ocorrências</string>
+    <string name="confirma_avaliacao">Avaliação Confirmada</string>
+    <string name="confirmacao">Confirmação</string>
+
+    <!-- Strings para as TABS -->
+    <string name="tab_turmas">TURMAS</string>
+    <string name="tab_ocorrencias">OCORRÊNCIAS</string>
+    <string name="tab_lancamento">LANÇAMENTO</string>
+    <string name="tab_consulta">CONSULTA</string>
+
+    <string name="horario">Horário</string>
+    <string name="title_activity_registro_aulas">RegistroAulasActivity</string>
+
+    <string name="periodo">Período</string>
+    <string name="anual">Anual</string>
+    <string name="primeiro">1° Bimestre</string>
+    <string name="segundo">2° Bimestre</string>
+    <string name="terceiro">3° Bimestre</string>
+    <string name="quarto">4° Bimestre</string>
+
+    <string name="consulta">Consulta</string>
+    <string name="nova_ava">Nova Avaliação</string>
+    <string name="edit_ava">Editar Avaliação</string>
+    <string name="nota">Nota</string>
+
+    <!-- Buttons -->
+    <string name="editar">Editar</string>
+
+    <!-- AlertBuilder -->
+    <string name="cadastrar">Cadastrar</string>
+
+    <!-- Toast -->
+    <string name="avaliacao_atualizada">Avaliação atualizada com sucesso!</string>
+    <string name="msg_ano_letivo">Período letivo não confere. Verifique a data do dispositivo e escolha o ano atual.</string>
+    <string name="complete_campos">Complete os campos</string>
+    <string name="selecione_tipo">Selecione o tipo</string>
+    <string name="registro_realizado">Registro realizado com sucesso!</string>
+    <string name="nao_possivel_deletar_habilidade">Nao foi possível deletar a habilidade</string>
+    <string name="frequencia_todos_alunos">Foi feita a chamada para todos os alunos</string>
+    <string name="avaliacao_todos_alunos">Foi feito o lançamento de notas para todos os alunos</string>
+
+    <string name="sigla_falta">F</string>
+    <string name="sigla_compareceu">C</string>
+    <string name="sigla_nao_se_aplica">N</string>
+    <string name="sigla_transferido">T</string>
+    <string name="desc_falta">Faltou</string>
+    <string name="desc_compareceu">Compareceu</string>
+    <string name="desc_nao_se_aplica">Não se aplica</string>
+    <string name="desc_transferido">Transferido</string>
+
+
+    <string name="desc_turma">Turma</string>
+    <string name="desc_matricula">Matrícula</string>
+    <string name="desc_status">Status</string>
+    <string name="desc_responsavel">Responsáveis</string>
+    <string name="desc_nome_pai">Nome do pai</string>
+    <string name="desc_nome_mae">Nome da mãe</string>
+    <string name="desc_info_indisp">[Informação não disponível]</string>
+
+    <string name="sinc_manual">Sincronizar</string>
+    <string name="confirma_sinc">Deseja sincronizar manualmente ?</string>
+    <string name="inicia_sinc">Sincronização com servidor iniciada&#8230;</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
+
+    <string name="content_arrow">Seta indicativa de abertura do conteúdo</string>
+    <string name="title_activity_carregar_login">CarregarLoginActivity</string>
+
+</resources>

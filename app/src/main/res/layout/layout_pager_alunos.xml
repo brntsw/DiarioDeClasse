@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/relativeCalendario"/>
+
+    <LinearLayout
+        android:id="@+id/lay_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAnterior"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_screen_slide_lancamento"
+            android:textColor="@color/white"
+            android:gravity="center"
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="@string/anterior"
+            android:textSize="@dimen/titulo_turma"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btnProximo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_screen_slide_lancamento"
+            android:textColor="@color/white"
+            android:gravity="center"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textSize="@dimen/titulo_turma"
+            android:text="@string/proximo"/>
+
+    </LinearLayout>
+
+</LinearLayout>

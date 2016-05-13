@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lay_aluno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:descendantFocusability="blocksDescendants" >
+
+        <TextView
+            android:id="@+id/tv_aluno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/texto_tab"
+            android:textColor="@color/cinza_titulo_tela_interna"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="aluno" />
+
+        <Button
+            android:id="@+id/bt_frequencia"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:id="@+id/tv_ativo"
+            android:textSize="24sp"
+            android:text="R"
+            android:gravity="center"
+            android:textColor="@color/amarelo_texto_dia_letivo"
+            android:layout_width="44dp"
+            android:layout_height="30dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

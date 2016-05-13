@@ -1,0 +1,24 @@
+<resources>
+    <dimen name="texto_grid">20sp</dimen>
+    <dimen name="texto_ano">20sp</dimen>
+    <dimen name="texto_spinner_ano">18sp</dimen>
+    <dimen name="titulo_turma">18sp</dimen>
+    <dimen name="titulo_toolbar">18sp</dimen>
+    <dimen name="texto_spinner_data">16sp</dimen>
+
+    <dimen name="texto_aviso">18sp</dimen>
+
+    <dimen name="texto_tab">16sp</dimen>
+
+    <dimen name="texto_sub">80dp</dimen>
+
+    <dimen name="number_height">120dp</dimen>
+    <dimen name="number_width">80dp</dimen>
+
+    <dimen name="number_decimal_height">60dp</dimen>
+    <dimen name="number_decimal_width">40dp</dimen>
+
+    <dimen name="titulo_conteudos">14sp</dimen>
+    <dimen name="texto_item_conteudo">16sp</dimen>
+    <dimen name="texto_item_habilidade">14sp</dimen>
+</resources>

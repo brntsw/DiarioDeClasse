@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "21.1.2"
+    compileOptions.encoding = 'UTF-8'
+
+    defaultConfig {
+        applicationId "br.gov.sp.educacao.sed.mobile"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1112
+        versionName "1.1.12"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.roomorama:caldroid:2.1.0' //calendário
+    compile 'info.hoang8f:android-segmented:1.0.6'
+    compile 'com.github.bmelnychuk:atv:1.2.+' //TreeView
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+}

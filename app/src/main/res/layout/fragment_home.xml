@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ola_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawableStart="@drawable/ic_person"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ola_home">
+
+    </android.support.v4.view.ViewPager>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New RadioButton"
+        android:id="@+id/radioButton" />
+
+    <LinearLayout
+        android:id="@+id/bullets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rodapeHome"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_page1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:src="@drawable/selected"
+            android:contentDescription="@string/selecionado" />
+
+        <ImageView
+            android:id="@+id/img_page2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:src="@drawable/not_selected"
+            android:contentDescription="@string/nao_selecionado" />
+
+        <ImageView
+            android:id="@+id/img_page3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:src="@drawable/not_selected"
+            android:contentDescription="@string/nao_selecionado" />
+
+        <ImageView
+            android:id="@+id/img_page4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:src="@drawable/not_selected"
+            android:contentDescription="@string/nao_selecionado" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/rodapeHome"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_gravity="bottom" />
+
+        <!--<ImageView
+            android:id="@+id/videoNovo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_video"
+            android:contentDescription="@string/video_novo_description"
+            android:paddingLeft="40dp"
+            android:paddingStart="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/video_novo"
+            android:paddingLeft="150dp"
+            android:paddingTop="30dp"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />-->
+
+    </FrameLayout>
+
+</RelativeLayout>

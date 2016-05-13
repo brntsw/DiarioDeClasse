@@ -1,0 +1,59 @@
+<resources>
+
+    <style name="Theme.Toolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- You can also set colorControlNormal, colorControlActivated
+             colorControlHighlight, and colorSwitchThumbNormal. -->
+
+        <item name="colorControlNormal">@color/colorAccent</item>
+
+        <item name="android:actionMenuTextColor">@color/abc_primary_text_material_dark</item>
+        <item name="actionMenuTextColor">@color/abc_primary_text_material_dark</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+
+    </style>
+
+    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_action</item>
+    </style>
+
+    <style name="Theme.Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/titulo_toolbar</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Theme.MyThemeBottom" parent="Theme.Toolbar">
+        <item name="colorPrimary">@android:color/white</item>
+
+    </style>
+
+    <!-- Style do Calendário -->
+    <style name="CalDroidTheme" parent="CaldroidDefault">
+        <item name="styleCaldroidMonthName">@style/CaldroidThemeMonthName</item>
+        <item name="styleCaldroidWeekdayView">@style/CaldroidThemeWeekday</item>
+    </style>
+
+    <style name="CaldroidThemeMonthName" parent="CaldroidDefaultMonthName">
+        <item name="android:textColor">@color/vermelho_titulo_calendario</item>
+        <item name="android:textSize">@dimen/titulo_toolbar</item>
+    </style>
+    
+    <style name="CaldroidThemeArrowButton" parent="CaldroidDefaultArrowButton">
+        <item name="android:layout_width">34dp</item>
+        <item name="android:layout_height">28dp</item>
+    </style>
+
+    <style name="CaldroidThemeWeekday" parent="CaldroidDefaultWeekday">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>
