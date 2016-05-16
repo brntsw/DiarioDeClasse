@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DiarioDeClasseAndroid.iml" filepath="$PROJECT_DIR$/DiarioDeClasseAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DiarioTesteJenkins.iml" filepath="$PROJECT_DIR$/DiarioTesteJenkins.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
